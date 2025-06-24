@@ -16,7 +16,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('categories', [CategoryController::class, 'index']);
     Route::post('orders', [OrderController::class, 'store']);
 
-    // You can keep this user route here if needed:
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
